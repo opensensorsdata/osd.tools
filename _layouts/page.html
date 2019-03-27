@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <div class="page-meta">
+      {% if page.italian %}<img src="{{ site.url }}/assets/img/icons/Flag_of_Italy.png"> <a href="{{ site.url }}{{ site.baseurl }}{{ page.italian }}">Italian version</a>{% endif %}
+      {% if page.english %}<img src="{{ site.url }}/assets/img/icons/Flag_of_USA_UK.png"> <a href="{{ site.url }}{{ site.baseurl }}{{ page.english }}">English version</a>{% endif %}
+    </div>
+  </header>
+  <img class="image-page" src="{{ site.url }}/{{ page.image }}" alt="immagini per {{ page.title }}">
+
+  <div class="post-content">
+    {{ content }}
+
+    {% assign m = page.date | date: "%-m" %}
+  <p class="date">
+    {{ page.date | date: "%-d" }}
+    {% case m %}
+    {% when '1' %}Gennaio
+    {% when '2' %}Febbraio
+    {% when '3' %}Marzo
+    {% when '4' %}Aprile
+    {% when '5' %}Maggio
+    {% when '6' %}Giugno
+    {% when '7' %}Luglio
+    {% when '8' %}Augusto
+    {% when '9' %}Settembre
+    {% when '10' %}Ottobre
+    {% when '11' %}Novembre
+    {% when '12' %}Dicembre
+    {% endcase %}
+    {{ page.date | date: "%Y" }}
+
+  {% if page.update %}
+    {% assign m = page.update | date: "%-m" %}
+    • Rieditato: {{ page.update | date: "%-d" }}
+    {% case m %}
+    {% when '1' %}Gennaio
+    {% when '2' %}Febbraio
+    {% when '3' %}Marzo
+    {% when '4' %}Aprile
+    {% when '5' %}Maggio
+    {% when '6' %}Giugno
+    {% when '7' %}Luglio
+    {% when '8' %}Augusto
+    {% when '9' %}Settembre
+    {% when '10' %}Ottobre
+    {% when '11' %}Novembre
+    {% when '12' %}Dicembre
+    {% endcase %}
+    {{ page.update | date: "%Y" }}
+  </p>
+  {% endif %}
+
+  </div>
+
+
+
+</article>

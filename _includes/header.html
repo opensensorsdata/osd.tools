@@ -1,0 +1,14 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <div class="nav-logo without-decoration">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="{{ site.url }}/assets/img/logos/osd-logo.svg" alt="osd logo"></a>
+    </div>
+    <div class="site-nav">
+      {% if page.back-link %}
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.back-link }}">{{ page.back-name }}</a>
+      {% endif %}
+    </div>
+  </div>
+</header>

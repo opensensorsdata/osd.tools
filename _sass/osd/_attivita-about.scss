@@ -1,0 +1,39 @@
+.activities-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+
+  img {
+    width: auto;
+    max-height: 5rem;
+    border-radius: 4px;
+    padding: 1rem;
+  }
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.profile-about {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  align-items: center;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.profile-img {
+  margin-right: 50px;
+
+  img {
+    border-radius: 4px;
+    width: 120px;
+    height: 120px;
+  }
+}

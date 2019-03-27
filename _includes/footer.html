@@ -1,0 +1,48 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <p><a href="https://blog.osd.tools/">Articoli</a> • <a href="/attivita/">Attività</a></p>
+
+    <h2 class="footer-heading"><img src="{{ site.url }}/assets/img/logos/osd-logo-icon-circle-black.svg" alt="logo osd"> <a href="mailto:contact@osd.tools">contact@osd.tools</a></h2>
+
+
+
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            <li>{{ site.subtitle }}</li>
+            <li>{{- site.description | escape -}}</li>
+            <li><a class="u-email" href="{{ site.url }}/about">Chi siamo</a> • <a class="u-email" href="{{ site.url }}/manifesto_osd_it">Manifesto</a> • <a class="u-email" href="{{ site.url }}/sitemap">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2 without-decoration">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="contact-list">
+          <li>© 2015-18 OSD opensensorsdata srl</li>
+          <li>via Daniele Manin, 60 Venezia Italy</li>
+          <li>(pec) opensensorsdata@pec.it</li>
+          <li>IVA (VAT) IT04294660271</li>
+          <li>IBAN IT 56 G 02008 02021 000103730837</li>
+          <li>Tutti i contenuti, tranne i loghi e i testi specificati sono distribuiti con Licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></li>
+          <li><a href="{{ site.url }}/termini-uso_it/">Termini e Condizioni d'uso</a> • <a href="{{ site.url }}/statuto">Statuto</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

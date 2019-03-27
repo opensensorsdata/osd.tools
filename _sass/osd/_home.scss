@@ -1,0 +1,45 @@
+.titolo {
+  font-family: et-book-bold-line-figures;
+}
+
+.sottotitolo {
+  font-family: et-book-display-italic-old-style-figures;
+  font-style: italic;
+}
+
+.disclamer {
+  font-family: et-book-display-italic-old-style-figures;
+  font-style: italic;
+}
+
+.home-text-box {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.home-img {
+  width: 34px;
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+
+.home-tangram {
+  max-width: 55%;
+  padding: 0 0 3rem 0;
+  margin-left: 22.5%;
+}
+
+.home-list {
+  list-style: none;
+  li {
+    line-height: 2.4;
+  }
+}
+.home-impresa {
+  padding: 0 2rem 2rem;
+  font-style: italic;
+}
+.home-text {
+  padding: 0 2rem;
+}

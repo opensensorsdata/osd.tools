@@ -1,0 +1,36 @@
+.image-page {
+  max-width: 55%;
+  padding: 0 0 3rem 0;
+  margin-left: 22.5%;
+}
+
+.biblioteca-list {
+  font-size: 1rem;
+  margin-left: 1rem;
+
+  li {
+    list-style: decimal;
+  }
+}
+
+.date {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.prezzi {
+  font-size: 0.9em;
+}
+
+.page-meta {
+  font-size: 1rem;
+
+  img {
+    max-height: 1rem;
+    width: auto;
+  }
+}
+
+.title-activity {
+  text-align: right;
+}

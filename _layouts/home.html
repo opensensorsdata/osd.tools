@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <h1 class="titolo">{{ site.aka }}</h1>
+  <h2 class="sottotitolo">{{ site.subtitle }}</h2>
+  <h3 class="disclamer">{{ site.description | escape }}</h3>
+  <ul class="home-list">
+    <li><a href="{{ site.url }}/gestire-i-dati/">Gestire i dati</a></li>
+    <li><a href="{{ site.url }}/open-business-model/">Open business model</a></li>
+    <li><a href="{{ site.url }}/consulenza-filosofica/">Consulenza filosofica</a></li>
+  </ul>
+
+
+  <h4 class="home-impresa">L'insieme delle conoscenze e dei dati è un capitale cognitivo: lo gestiamo e lo distribuiamo per generare valore economico e strategico.</h4>
+
+  <img class="home-tangram" src="{{ site.url }}/assets/img/tangram/osd-tangram_orizzontale.svg" alt="">
+
+  <div class="home-text-box">
+    <img class="home-img" src="{{ site.url }}/assets/img/icons/truck.svg" alt="logo osd mission">
+    <p class="home-text">Consegniamo e realizziamo strategie per il capitale cognitivo e modelli di business per il riuso e l’investimento di mercato dei propri dati.</p>
+  </div>
+
+  <div class="home-text-box">
+    <img class="home-img" src="{{ site.url }}/assets/img/icons/icon-recycle.svg" alt="logo osd mission">
+    <p class="home-text">Lavoriamo per trasformare il modo in cui le aziende, le istituzioni, e gli enti di ricerca pensano e gestiscono il proprio capitale cognitivo.</p>
+  </div>
+
+  <div class="home-text-box">
+    <img class="home-img" src="{{ site.url }}/assets/img/icons/icon-obm.svg" alt="logo osd mission">
+    <p class="home-text">Assistiamo i nostri clienti seguendo ogni fase progettuale nella creazione di servizi basati sul riuso dei dati.</p>
+  </div>
+
+  <div class="home-text-box">
+    <img class="home-img" src="{{ site.url }}/assets/img/icons/icon-masterplan.svg" alt="logo osd mission">
+    <p class="home-text"><a href="/about">OSD opensensorsdata</a> srl è un’azienda fondata nel 2015 da Luca Corsato, Simone Cortesi, e Andrea Raimondi.</p>
+  </div>
